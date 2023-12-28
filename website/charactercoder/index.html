@@ -1,0 +1,27 @@
+<html><head><script>
+function filter(msg){
+return msg.replace(" ","[space]")
+}
+function d(g){
+h=[]
+document.getElementById("text").textContent=""
+for (let i = 0; i < g.length; i++) {
+  document.getElementById("text").textContent=filter(document.getElementById("text").textContent+"\n\n"+(g.charAt(i)+"	|	"+g.charCodeAt(i)));
+}}</script></head><body style="
+    align-content: center;
+">
+<style>
+  p {
+    white-space: pre-line;
+  }
+</style>
+<h3>Text to character codes</h3>
+<a href="../index.html">Homepage</a>
+<br>
+<input type="text" id="input" value="">
+<button onclick="javascript:d(document.getElementById('input').value)">Go</button>
+<hr>
+<p style="
+    /* white-space: inherit; */
+" id="text" >Input a value</p>
+</body></html>

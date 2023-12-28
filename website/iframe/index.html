@@ -1,0 +1,11 @@
+<script>
+function enter(){
+document.getElementById("output").src=document.getElementById("input").value
+}
+enter()
+</script>
+<h3>iframe page</h3>
+<p>Enter the website you want to embed</p>
+<p>If it errors the website does NOT allow iframes outside of the server </p>
+<input type="text" id="input" value=""><button id="button" onclick="javascript:enter()">Go</button><br>
+<iframe id="output" src="https://youtube.com" allowfullscreen=true allowpaymentrequest=true referrerpolicy="origin" sandbox="allow-scripts" sandbox="allow-pointer-lock" sandbox="popups">
